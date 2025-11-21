@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sparta  About</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <div class="logo-video">
+            <!-- Video element with autoplay, loop and muted attributes -->
+            <video autoplay loop muted playsinline>
+                <!-- Using a placeholder video from Pexels -->
+                <source src="images/Video Project 2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/track.html" class="track-btn">🚚 Track</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+  <section class="about-section">
+    <h2>Who <span>We Are</span></h2>
+  
+    <div class="about-container">
+      <div class="about-image">
+        <img src="/images/who we are.png" alt="Sparta Logistics">
+      </div>
+  
+      <div class="about-content">
+        <p>
+          <strong>Sparta Logistics</strong> is a leading logistics and supply chain solutions provider, offering a wide range of transport, warehousing, and delivery services across India.
+        </p>
+  
+        <p>
+          We are committed to helping businesses move smarter, faster, and more efficiently through technology-driven logistics solutions. Our dedicated team ensures that every shipment is handled with precision, care, and transparency — from pickup to delivery.
+        </p>
+  
+        <p>
+          With advanced tracking systems, optimized route planning, and a nationwide network, Sparta Logistics continues to redefine reliability in the logistics industry, ensuring your goods reach their destination safely and on time.
+        </p>
+      </div>
+    </div>
+    
+  </section>
+  <section class="vision-mission-section">
+    <h2><span>Our</span> Vision & Mission</h2>
+  
+    <div class="vm-container">
+  
+      <!-- Our Vision -->
+      <div class="vm-item">
+        <div class="vm-text">
+          <h3>Our Vision</h3>
+          <p>
+            To be recognized as India’s most trusted and innovative logistics partner,
+            delivering excellence with every shipment.
+          </p>
+        </div>
+        <div class="vm-image">
+          <img src="images/our mission.jpg" alt="Our Vision">
+        </div>
+      </div>
+  
+      <!-- Our Mission -->
+      <div class="vm-item reverse">
+        <div class="vm-image">
+          <img src="images/mission.jpg" alt="Our Mission">
+        </div>
+        <div class="vm-text">
+          <h3>Our Mission</h3>
+          <p>
+            To provide reliable, cost-effective, and customer-focused logistics solutions
+            that drive business growth and build long-term partnerships.
+          </p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+    
+  <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+          <h2>SPARTA</h2>
+          <p>Reliable logistics solutions for your business growth.</p>
+        </div>
+  
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="/services.html#road" class="service-link" data-service="road">Surface Transport</a></li>
+        <li><a href="/services.html#air" class="service-link" data-service="air">Air Freight Services</a></li>
+        <li><a href="/services.html#ocean" class="service-link" data-service="ocean">Ocean Freight Services</a></li>
+        <li><a href="/services.html#rail" class="service-link" data-service="rail">Rail Transport Services</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h3>Other Links</h3>
+          <ul>
+            <li><a href="#" class="policy-link" data-type="terms">Terms & Conditions</a></li>
+            <li><a href="#"class="policy-link" data-type="privacy">Privacy Policy</a></li>
+            <li><a href="#"class="policy-link" data-type="refund">Refund & Cancellation Policy</a></li>
+          </ul>
+  
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sparta-logistics-india-7b6910396/"><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/spartalogisticsindia/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/17h5ZJFG4S/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+  
+</footer>
+
+    <!-- Popup Modals -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-container">
+          <div class="modal-header">
+              <h2 id="modalTitle">Terms & Conditions</h2>
+              <button class="close-btn" id="closeModal">
+                  <i class="fas fa-times"></i>
+              </button>
+          </div>
+          <div class="modal-content" id="modalContent">
+              <!-- Content will be loaded here dynamically -->
+          </div>
+      </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sparta-freight</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <div class="logo-video">
+            <!-- Video element with autoplay, loop and muted attributes -->
+            <video autoplay loop muted playsinline>
+                <!-- Using a placeholder video from Pexels -->
+                <source src="images/Video Project 2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/track.html" class="track-btn">🚚 Track</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+
+  <section>
+    <h1 class="trucking-header">Freight Forwarding Solutions</h1>
+    <div class="trucking-content">
+      <p><strong>At Sparta Logistics India</strong> we provide end-to-end freight forwarding solutions designed to simplify international trade and ensure your cargo moves across borders smoothly and securely.</p>
+      <p>From strategic planning and route optimization to customs management and multimodal coordination, we handle every step with precision, compliance, and complete visibility.
+    </p>
+    
+      <h3>Global Freight Forwarding Solutions Engineered for Reliability</h3>
+      <p>Our global network of partners, strong carrier relationships, and digital tracking capabilities allow us to offer air, sea, and cross-border freight solutions tailored to your timelines and budget.</p>
+      <p> Whether it’s full container loads, LCL shipments, or urgent air consignments, we ensure timely, cost-effective, and seamless international movement backed by expert documentation and 24/7 support.</p>
+  </div>
+  </section>
+
+
+
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+          <h2>SPARTA</h2>
+          <p>Reliable logistics solutions for your business growth.</p>
+        </div>
+  
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="/services.html#road" class="service-link" data-service="road">Surface Transport</a></li>
+        <li><a href="/services.html#air" class="service-link" data-service="air">Air Freight Services</a></li>
+        <li><a href="/services.html#ocean" class="service-link" data-service="ocean">Ocean Freight Services</a></li>
+        <li><a href="/services.html#rail" class="service-link" data-service="rail">Rail Transport Services</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h3>Other Links</h3>
+          <ul>
+            <li><a href="#" class="policy-link" data-type="terms">Terms & Conditions</a></li>
+            <li><a href="#"class="policy-link" data-type="privacy">Privacy Policy</a></li>
+            <li><a href="#"class="policy-link" data-type="refund">Refund & Cancellation Policy</a></li>
+          </ul>
+  
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sparta-logistics-india-7b6910396/"><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/spartalogisticsindia/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/17h5ZJFG4S/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+  
+</footer>
+
+    <!-- Popup Modals -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-container">
+          <div class="modal-header">
+              <h2 id="modalTitle">Terms & Conditions</h2>
+              <button class="close-btn" id="closeModal">
+                  <i class="fas fa-times"></i>
+              </button>
+          </div>
+          <div class="modal-content" id="modalContent">
+              <!-- Content will be loaded here dynamically -->
+          </div>
+      </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
+
