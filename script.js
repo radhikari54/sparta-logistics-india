@@ -11,19 +11,34 @@ toggle.addEventListener('click', () => {
 const policyContent = {
     terms: `
         <h3>Terms & Conditions</h3>
-        <p><strong>Scope:</strong> These Terms & Conditions govern your use of the LOGISTOS website or platform owned by LOGISTOS Technology operating under the brand name "LOGISTOS".</p>
+        <p><strong>Scope:</strong> By accessing and using SPARTA LOGISTICS services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. These terms govern your use of our logistics, transportation, and supply chain services.</p>
         
-        <h3>Eligibility</h3>
-        <p>LOGISTOS provides a website and is available only to entities and persons who have reached the age of legal majority and are competent to enter into a legally binding agreement(s) under the applicable law. If you do not qualify, you cannot use the website.</p>
+        <h3> Pricing and Payment</h3>
+        <p> All price quotations are valid for 30 days from the date of issue, unless otherwise specified.
+        </p>
         
-        <h3>LOGISTOS Licenses</h3>
-        <p>All customized graphics, icons, and other items that appear on the websites are trademarks, service marks ("Marks") of LOGISTOS, and the license to use such marks may not be used or interfered with in any manner. LOGISTOS does not convey to anyone, through allowing access to this website, any ownership rights in the LOGISTOS website or content appearing on the website. You may not modify, publish, transmit, transfer, sell, reproduce, create derivative work from, distribute, repost, perform, display, or commercially exploit any of the content available on the website or reverse engineer the website.</p>
         
-        <h3>Policy Updates</h3>
-        <p>LOGISTOS reserves the right to change the terms and conditions from time to time without any notice, it is the customer's responsibility to review the policies, terms, and conditions mentioned on this website.</p>
+        <h3>5. Liability and Insurance</h3>
+        <p><strong> Limited Liability:</strong> SPARTA LOGISTICS liability for loss or damage to goods is limited to ₹50 per kg or the declared value of goods, whichever is lower.</p>
+        <p><strong> Insurance:</strong> Basic insurance coverage is included in all shipments. Additional insurance can be purchased for high-value goods.</p>
+        <p><strong> Exclusions:</strong> We are not liable for delays or damages caused by:</p>
+        <ul>
+            <li>Force Majeure events (natural disasters, strikes, wars)</li>
+            <li>Incorrect documentation provided by customer</li>
+            <li>Customs delays or regulatory issues</li>
+            <li>Improper packaging by customer</li>
+        </ul>
         
-        <h3>Modification of Terms</h3>
-        <p>LOGISTOS may revise and update these terms and conditions at any time. Your continued usage of the websites after any changes to these terms and conditions will be deemed as acceptance of such changes.</p>
+        <h3>6. Prohibited Items</h3>
+        <p>The following items are strictly prohibited and will not be transported:</p>
+        <ul>
+            <li>Illegal drugs and narcotics</li>
+            <li>Weapons, ammunition, explosives</li>
+            <li>Hazardous materials without proper declaration</li>
+            <li>Perishable goods without special arrangements</li>
+            <li>Cash, jewelry, and precious stones</li>
+            <li>Live animals without prior approval</li>
+        </ul>
     `,
     
     privacy: `
@@ -67,7 +82,7 @@ const policyContent = {
         </ul>
         
         <h3>Contact for Refunds</h3>
-        <p>For any refund-related queries, please contact our customer support at refunds@logistos.in or call us at 7090500400.</p>
+        <p>For any refund-related queries, please contact our customer support at http://www.spartalogisticsindia.in or call us at 9321547372.</p>
     `
 };
 
