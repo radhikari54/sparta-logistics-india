@@ -762,14 +762,12 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
 .container {
   width: 100%;
   background: linear-gradient(to bottom right, #f8f9fa, #e8f7ff);
   overflow: hidden;
   padding: 150px 3%;
   margin-top: 0rem;
-  
 }
 
 /* Header styles */
@@ -813,6 +811,12 @@
   display: flex;
   background: #9dc6ef;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .tab-btn {
@@ -828,6 +832,7 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .tab-btn::before {
@@ -1015,6 +1020,282 @@
   }
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 120px 2% 50px;
+  }
+  
+  .container h1 {
+      font-size: 2.5rem;
+  }
+  
+  .tabs {
+      flex-direction: row;
+      overflow-x: auto;
+  }
+  
+  .tab-btn {
+    min-width: 160px;
+    padding: 1rem 0.8rem;
+    font-size: 1rem;
+  }
+  
+  .tab-header h2 {
+      font-size: 2rem;
+  }
+  
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    padding: 1.5rem;
+  }
+  
+  .tab-content {
+    padding: 2rem 1rem;
+  }
+}
+
+/* 375px Breakpoint */
+@media (max-width: 375px) {
+  .container {
+    padding: 100px 1% 30px;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .container header {
+    padding: 2rem 1rem 1.5rem;
+  }
+  
+  .container h1 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .container h1::after {
+    height: 3px;
+    bottom: -8px;
+  }
+  
+  .subtitle {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+  
+  .tabs {
+    padding: 0;
+  }
+  
+  .tab-btn {
+    min-width: 140px;
+    padding: 0.9rem 0.6rem;
+    font-size: 0.9rem;
+  }
+  
+  .tab-content {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .tab-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tab-header h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tab-header p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .service-grid {
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .service-card {
+    padding: 1.2rem;
+    margin: 0 0.2rem;
+    border-left: 4px solid #6de6f3;
+  }
+  
+  .card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .card-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  /* Reduce animation intensity on small screens */
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-icon {
+    animation: bounce 3s infinite;
+  }
+}
+
+/* 320px Breakpoint - Extra Small Devices */
+@media (max-width: 320px) {
+  .container {
+    padding: 90px 0.5% 20px;
+  }
+  
+  .container header {
+    padding: 1.5rem 0.8rem 1rem;
+  }
+  
+  .container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    padding: 0 0.3rem;
+  }
+  
+  .tab-btn {
+    min-width: 120px;
+    padding: 0.8rem 0.4rem;
+    font-size: 0.85rem;
+  }
+  
+  .tab-content {
+    padding: 1.2rem 0.5rem;
+  }
+  
+  .tab-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .tab-header p {
+    font-size: 0.9rem;
+  }
+  
+  .service-grid {
+    gap: 1rem;
+  }
+  
+  .service-card {
+    padding: 1rem;
+    margin: 0;
+    border-left: 3px solid #6de6f3;
+  }
+  
+  .card-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .card-description {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  /* Disable hover effects on very small touch devices */
+  @media (hover: none) {
+    .service-card:hover {
+      transform: none;
+    }
+    
+    .service-card:hover::before {
+      left: -100%;
+    }
+    
+    .service-card:hover .card-title::after {
+      width: 0;
+    }
+  }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 375px) {
+  /* Improve touch targets */
+  .tab-btn {
+    min-height: 50px;
+  }
+  
+  .service-card {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Optimize for portrait mode */
+  @media (orientation: portrait) {
+    .container {
+      padding: 100px 1% 30px;
+    }
+  }
+  
+  /* Optimize for landscape mode */
+  @media (orientation: landscape) and (max-height: 500px) {
+    .container {
+      padding: 80px 1% 20px;
+    }
+    
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    
+    .service-card {
+      padding: 1rem;
+      min-height: 20px;
+    }
+  }
+}
+
+/* High DPI screens optimization */
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 375px), 
+       (min-resolution: 192dpi) and (max-width: 375px) {
+  .service-card {
+    border-left-width: 3px;
+  }
+  
+  .container h1::after {
+    height: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .service-card,
+  .tab-btn,
+  .container h1::after {
+    animation: none;
+    transition: none;
+  }
+  
+  .service-card {
+    opacity: 1;
+  }
+}
+
+
+
 /* Footer */
 footer {
   margin-top: 4rem;
@@ -1023,31 +1304,6 @@ footer {
   opacity: 0.8;
   animation: fadeIn 2s ease 1.5s forwards;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  h1 {
-      font-size: 2.5rem;
-  }
-  
-  .tabs {
-      flex-direction: column;
-  }
-  
-  .service-grid {
-      grid-template-columns: 1fr;
-  }
-  
-  .tab-header h2 {
-      font-size: 2rem;
-  }
-}
-
-/* end of service */
-
-
-
-
 
 
 /* Contact Section */
