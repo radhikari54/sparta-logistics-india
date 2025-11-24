@@ -1575,6 +1575,39 @@ footer {
   }
 }
 
+@media (max-width: 320px) {
+  .contact-form-section{
+    width: 100%;
+    overflow: hidden;
+  }
+  .contact-info-section{
+    width: 100%;
+    overflow: hidden;
+  }
+  .form-row {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+  }
+  
+  .form h1 {
+      font-size: 1rem;
+  }
+  
+  .contact-form-section h2,
+  .contact-info-section h2 {
+      font-size: 1rem;
+  }
+  
+  .info-item {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .info-icon {
+      align-self: center;
+  }
+}
+
 /* Footer */
 footer {
   background: #0d1b2a;
